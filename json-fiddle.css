@@ -1,0 +1,110 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+html, body {
+  height: 100%;
+}
+
+.json-fiddle {
+  position: relative;
+  height: 100%;
+  font: 18px monospaced;
+}
+
+.json-fiddle .left {
+  float: left;
+  height: 100%;
+  width: 310px;
+}
+
+.json-fiddle .right {
+  float: left;
+}
+
+.json-fiddle #json-text {
+  height: 100%;
+  width: 300px;
+  padding: 0px;
+}
+
+.json-fiddle #json-visual {
+  height: 100%;
+  width: 100%;
+}
+
+.json-fiddle #json-visual .value {
+  margin-left: 10px;
+  padding: 2px;
+}
+
+.json-fiddle #json-visual .object {
+  border: 1px solid gray;
+}
+
+.json-fiddle #json-visual .object-name {
+  font-weight: bold;
+}
+
+.json-fiddle #json-visual .array {
+  border: 1px dashed gray;
+}
+
+.json-fiddle #json-visual .array-name {
+  font-style: italic;
+  font-weight: bold;
+}
+
+.json-fiddle #json-visual .string {
+  color: brown;
+}
+
+.json-fiddle #json-visual .string:after,
+.json-fiddle #json-visual .string:before {
+  content: '"';
+}
+
+.json-fiddle #json-visual .number {
+  color: magenta;
+}
+
+.json-fiddle #json-visual .true {
+  color: green;
+}
+
+.json-fiddle #json-visual .false {
+  color: red;
+}
+
+.json-fiddle #json-visual .name {
+  vertical-align: top;
+}
+
+.json-fiddle #json-visual .name:after {
+  vertical-align: top;
+  content: ':';
+}
+
+.json-fiddle #json-visual .clickable {
+  cursor: pointer;
+}
+
+.json-fiddle #json-visual .hidden {
+  display: none;
+}
